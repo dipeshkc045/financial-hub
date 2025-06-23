@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="brand">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Flag_of_Nepal.svg" alt="Nepal Flag">
+            Financial Hub
+        </div>
+        <div style="color:#ffd700; font-size:0.95rem; margin-bottom:1.5rem; text-align:center;">Nepal's Premier Personal & Business Finance Platform</div>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="dashboard-link">Dashboard</a></li>
+                <li><a href="#" id="transactions-link">Transactions</a></li>
+                <li><a href="#" id="reports-link">Reports</a></li>
+                <li><a href="#" id="invoices-link">Invoices</a></li>
+                <li><a href="#" id="clients-link">Clients</a></li>
+                <li><a href="#" id="inventory-link">Inventory</a></li>
+                <li><a href="#" id="settings-link">Settings</a></li>
+                <li><a href="#" id="news-link">Financial News</a></li>
+                <li><a href="#" id="accounts-link">Accounts</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <div class="main-content">
+        <section id="content">
+            <div class="card" style="padding:2.5rem 2.5rem 2rem 2.5rem;">
+                <div class="home-hero" style="display:flex;align-items:center;gap:2rem;margin-bottom:2.5rem;flex-wrap:wrap;">
+                    <div style="flex:2;min-width:220px;">
+                        <h1 style="margin-bottom:0.5rem;">Welcome to Financial Hub</h1>
+                        <p class="tagline" style="font-size:1.2rem;color:#4d768a;margin-bottom:1.5rem;">Your modern platform for managing finances in Nepal</p>
+                        <div style="display:flex;gap:1.5rem;flex-wrap:wrap;">
+                            <div class="stat-card" style="background:#8eb6c1;border-radius:10px;padding:1rem 1.5rem;min-width:160px;box-shadow:0 2px 8px #21344811;">
+                                <div style="font-size:1.5rem;">💰</div>
+                                <div style="font-size:0.95rem;">Total Balance</div>
+                                <div class="stat-value npr" style="font-size:1.2rem;">NPR 12,50,000.50</div>
+                            </div>
+                            <div class="stat-card" style="background:#8eb6c1;border-radius:10px;padding:1rem 1.5rem;min-width:160px;box-shadow:0 2px 8px #21344811;">
+                                <div style="font-size:1.5rem;">👥</div>
+                                <div style="font-size:0.95rem;">Active Clients</div>
+                                <div class="stat-value" style="font-size:1.2rem;color:#213448;">12</div>
+                            </div>
+                            <div class="stat-card" style="background:#8eb6c1;border-radius:10px;padding:1rem 1.5rem;min-width:160px;box-shadow:0 2px 8px #21344811;">
+                                <div style="font-size:1.5rem;">🧾</div>
+                                <div style="font-size:0.95rem;">Pending Invoices</div>
+                                <div class="stat-value" style="font-size:1.2rem;color:#4d768a;">3</div>
+                            </div>
+                            <div class="stat-card" style="background:#8eb6c1;border-radius:10px;padding:1rem 1.5rem;min-width:160px;box-shadow:0 2px 8px #21344811;">
+                                <div style="font-size:1.5rem;">🔄</div>
+                                <div style="font-size:0.95rem;">Recent Transactions</div>
+                                <div class="stat-value" style="font-size:1.2rem;color:#12b76a;">+4</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="flex:1;min-width:200px;text-align:center;">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920244.png" alt="Finance Illustration" style="max-width:160px;width:100%;margin-top:1rem;"/>
+                    </div>
+                </div>
+                <div class="home-actions" style="margin-bottom:2.5rem;display:flex;gap:1.5rem;flex-wrap:wrap;">
+                    <button class="cta" style="background:#4d768a;">+ Add Transaction</button>
+                    <button class="cta" style="background:#8eb6c1;color:#213448;">+ Create Invoice</button>
+                    <button class="cta" style="background:#eaf6d8;color:#213448;">+ Add Client</button>
+                </div>
+                <div class="home-features" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:2rem;margin-bottom:2.5rem;">
+                    <div class="feature" style="background:#eaf6d8;border-radius:10px;padding:1.5rem;text-align:center;box-shadow:0 2px 8px #21344811;">
+                        <div style="font-size:2rem;">📊</div>
+                        <h3 style="margin:0.5rem 0 0.3rem 0;">Analytics</h3>
+                        <p style="color:#4d768a;font-size:1rem;">Beautiful, actionable reports and charts</p>
+                    </div>
+                    <div class="feature" style="background:#eaf6d8;border-radius:10px;padding:1.5rem;text-align:center;box-shadow:0 2px 8px #21344811;">
+                        <div style="font-size:2rem;">🔒</div>
+                        <h3 style="margin:0.5rem 0 0.3rem 0;">Secure</h3>
+                        <p style="color:#4d768a;font-size:1rem;">Your data is private and protected</p>
+                    </div>
+                    <div class="feature" style="background:#eaf6d8;border-radius:10px;padding:1.5rem;text-align:center;box-shadow:0 2px 8px #21344811;">
+                        <div style="font-size:2rem;">🌐</div>
+                        <h3 style="margin:0.5rem 0 0.3rem 0;">Nepal Ready</h3>
+                        <p style="color:#4d768a;font-size:1rem;">Full NPR support and local focus</p>
+                    </div>
+                    <div class="feature" style="background:#eaf6d8;border-radius:10px;padding:1.5rem;text-align:center;box-shadow:0 2px 8px #21344811;">
+                        <div style="font-size:2rem;">🧾</div>
+                        <h3 style="margin:0.5rem 0 0.3rem 0;">Easy Invoicing</h3>
+                        <p style="color:#4d768a;font-size:1rem;">Create, send, and track invoices easily</p>
+                    </div>
+                </div>
+                <div class="home-activity" style="margin-bottom:1rem;">
+                    <h3 style="color:#4d768a;margin-bottom:1rem;">Recent Activity</h3>
+                    <ul style="list-style:none;padding:0;margin:0;">
+                        <li style="margin-bottom:0.7rem;display:flex;align-items:center;gap:1rem;background:#f2f4f8;padding:0.8rem 1.2rem;border-radius:8px;box-shadow:0 1px 4px #21344808;">
+                            <span style="font-size:1.3rem;">💸</span> <span>Payment received from <strong>Alice Smith</strong> <span class="npr">NPR 50,000.00</span></span>
+                        </li>
+                        <li style="margin-bottom:0.7rem;display:flex;align-items:center;gap:1rem;background:#f2f4f8;padding:0.8rem 1.2rem;border-radius:8px;box-shadow:0 1px 4px #21344808;">
+                            <span style="font-size:1.3rem;">🧾</span> <span>Invoice #102 sent to <strong>Bob Johnson</strong></span>
+                        </li>
+                        <li style="margin-bottom:0.7rem;display:flex;align-items:center;gap:1rem;background:#f2f4f8;padding:0.8rem 1.2rem;border-radius:8px;box-shadow:0 1px 4px #21344808;">
+                            <span style="font-size:1.3rem;">📦</span> <span>Inventory updated: <strong>Laptop</strong> (12 in stock)</span>
+                        </li>
+                        <li style="display:flex;align-items:center;gap:1rem;background:#f2f4f8;padding:0.8rem 1.2rem;border-radius:8px;box-shadow:0 1px 4px #21344808;">
+                            <span style="font-size:1.3rem;">👥</span> <span>New client added: <strong>Carol Lee</strong></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Financial Hub | Made with <span class="currency">रु</span> for Nepal</p>
+    </footer>
+</body>
+</html> 

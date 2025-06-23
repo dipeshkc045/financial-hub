@@ -1,0 +1,7 @@
+{
+  "news": [
+    {"title": "Market Update", "summary": "Stocks rose 1.2% today amid positive earnings reports."},
+    {"title": "Interest Rates", "summary": "The central bank held interest rates steady this quarter."},
+    {"title": "Tech Sector", "summary": "Tech companies lead gains as new innovations are announced."}
+  ]
+} 

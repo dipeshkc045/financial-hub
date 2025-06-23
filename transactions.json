@@ -1,0 +1,5 @@
+{"transactions": [
+  {"date": "2024-06-01", "description": "Payment received", "amount": 500.00},
+  {"date": "2024-06-02", "description": "Office supplies", "amount": -75.25},
+  {"date": "2024-06-03", "description": "Subscription renewal", "amount": -20.00}
+]} 

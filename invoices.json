@@ -1,0 +1,5 @@
+{"invoices": [
+  {"id": 101, "amount": 1200.00, "status": "Paid"},
+  {"id": 102, "amount": 850.00, "status": "Unpaid"},
+  {"id": 103, "amount": 430.00, "status": "Overdue"}
+]} 

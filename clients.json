@@ -1,0 +1,5 @@
+{"clients": [
+  {"name": "Alice Smith", "email": "alice@example.com"},
+  {"name": "Bob Johnson", "email": "bob@example.com"},
+  {"name": "Carol Lee", "email": "carol@example.com"}
+]} 
